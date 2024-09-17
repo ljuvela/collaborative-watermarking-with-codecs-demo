@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Collaborative Watermarking</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div class='section'>
+        <h1>Audio Codec Augmentation for Robust Collaborative Watermarking of Speech Synthesis</h1>
+        <p>Submitted to ICASSP 2025</p>
+        <br>
+        <p>Source code available at <a href="https://github.com/ljuvela/collaborative-watermarking-with-codecs"> https://github.com/ljuvela/collaborative-watermarking-with-codecs </a> </p>
+        <br>
+        <p>Following <a href="http://www.openslr.org/141/">LibriTTS-R dataset</a>, audio samples on this page are distributed following <a href="http://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons License: Attribution 4.0 International (CC BY 4.0)</a>.</p>
+        <p>Please select the utterance ID from the menu. The page will load the corresponding audio samples. </p>
+    </div>
+
+    <hr>
+    <div id='section-1' class='section'>
+        <select id='select-utterance'>
+            <option value="121_121726_000029_000003">121_121726_000029_000003</option>
+            <option value="237_126133_000055_000003">237_126133_000055_000003</option>
+            <option value="237_134493_000007_000000">237_134493_000007_000000</option>
+            <option value="237_134493_000022_000000">237_134493_000022_000000</option>
+            <option value="237_134500_000004_000001">237_134500_000004_000001</option>
+            <option value="237_134500_000031_000000">237_134500_000031_000000</option>
+            <option value="237_134500_000036_000005">237_134500_000036_000005</option>
+            <option value="260_123286_000042_000000">260_123286_000042_000000</option>
+            <option value="260_123288_000004_000001">260_123288_000004_000001</option>
+            <option value="260_123288_000007_000001">260_123288_000007_000001</option>
+            <option value="260_123288_000015_000000">260_123288_000015_000000</option>
+            <option value="260_123440_000010_000002">260_123440_000010_000002</option>
+            <option value="260_123440_000021_000001">260_123440_000021_000001</option>
+            <option value="1089_134691_000025_000000">1089_134691_000025_000000</option>
+            <option value="1188_133604_000012_000003">1188_133604_000012_000003</option>
+            <option value="1284_1181_000028_000001">1284_1181_000028_000001</option>
+            <option value="1320_122612_000005_000001">1320_122612_000005_000001</option>
+            <option value="1320_122612_000056_000003">1320_122612_000056_000003</option>
+            <option value="1580_141083_000083_000001">1580_141083_000083_000001</option>
+            <option value="1580_141084_000057_000000">1580_141084_000057_000000</option>
+            <option value="1995_1836_000007_000001">1995_1836_000007_000001</option>
+            <option value="1995_1836_000030_000000">1995_1836_000030_000000</option>
+            <option value="3570_5694_000007_000005">3570_5694_000007_000005</option>
+            <option value="3570_5694_000014_000006">3570_5694_000014_000006</option>
+            <option value="3570_5696_000004_000004">3570_5696_000004_000004</option>
+            <option value="3575_170457_000029_000000">3575_170457_000029_000000</option>
+            <option value="4446_2271_000022_000010">4446_2271_000022_000010</option>
+            <option value="4446_2273_000003_000000">4446_2273_000003_000000</option>
+            <option value="4446_2273_000011_000003">4446_2273_000011_000003</option>
+            <option value="4446_2273_000035_000002">4446_2273_000035_000002</option>
+            <option value="4446_2273_000035_000004">4446_2273_000035_000004</option>
+            <option value="5105_28241_000005_000000">5105_28241_000005_000000</option>
+            <option value="5105_28241_000021_000001">5105_28241_000021_000001</option>
+            <option value="5639_40744_000018_000002">5639_40744_000018_000002</option>
+            <option value="5683_32865_000012_000000">5683_32865_000012_000000</option>
+            <option value="5683_32879_000047_000000">5683_32879_000047_000000</option>
+            <option value="6829_68769_000017_000001">6829_68769_000017_000001</option>
+            <option value="6829_68769_000062_000000">6829_68769_000062_000000</option>
+            <option value="6829_68769_000096_000001">6829_68769_000096_000001</option>
+            <option value="6930_75918_000038_000000">6930_75918_000038_000000</option>
+            <option value="7021_79730_000062_000000">7021_79730_000062_000000</option>
+            <option value="7021_85628_000036_000001">7021_85628_000036_000001</option>
+            <option value="7127_75946_000060_000005">7127_75946_000060_000005</option>
+            <option value="7127_75947_000082_000005">7127_75947_000082_000005</option>
+            <option value="7176_88083_000024_000003">7176_88083_000024_000003</option>
+            <option value="8230_279154_000024_000007">8230_279154_000024_000007</option>
+            <option value="8455_210777_000075_000000">8455_210777_000075_000000</option>
+            <option value="8463_294825_000017_000001">8463_294825_000017_000001</option>
+            <option value="8463_294828_000021_000000">8463_294828_000021_000000</option>
+            <option value="8555_284447_000047_000000">8555_284447_000047_000000</option>
+        </select>
+
+        <div class='playlist'>
+
+            <table style="width:100%">
+              <tr>
+                <th style="width: 20%"></th> <th style="width: 20%"></th> <th style="width:30%"></th> <th style="width:30%"></th>
+              </tr>
+              <tr>
+                <td></td> <td>Natural recording</td> <td><audio preload='metadata' controls><source class='select-utterance'  src='https://users.aalto.fi/~ljuvela/cowama-with-codecs/listening_test_assets_prolific/audio/Natural/121_121726_000029_000003.wav' type='audio/mpeg'></audio></td> <th></th>
+              </tr>
+              <tr>
+                <td></td> <td>Pre-trained HiFi-GAN</td> <td><audio preload='metadata' controls><source class='select-utterance'  src='https://users.aalto.fi/~ljuvela/cowama-with-codecs/listening_test_assets_prolific/audio/HiFi-GAN-pretrained/121_121726_000029_000003.wav' type='audio/mpeg'></audio></td> <th></th>
+              </tr>
+              <tr>
+                <td></td> <td>Fine-tuned HiFi-GAN</td> <td><audio preload='metadata' controls><source class='select-utterance'  src='https://users.aalto.fi/~ljuvela/cowama-with-codecs/listening_test_assets_prolific/audio/HiFi-GAN-finetuned/121_121726_000029_000003.wav' type='audio/mpeg'></audio></td> <th></th>
+              </tr>
+              <tr>
+                  <td><br></td>
+              </tr>
+
+              <tr>
+                <td>Training</td><td>Augmentation</td><td>ASSIST</td>
+              </tr>
+              <tr>
+                <td>Collaborative</td><td>None</td><td><audio preload='metadata' controls><source class='select-utterance'  src='https://users.aalto.fi/~ljuvela/cowama-with-codecs/listening_test_assets_prolific/audio/HiFi-GAN-collab-none/121_121726_000029_000003.wav' type='audio/mpeg'></audio></td>
+              </tr>
+              <tr>
+                <td></td><td>DAC</td><td><audio preload='metadata' controls><source class='select-utterance'  src='https://users.aalto.fi/~ljuvela/cowama-with-codecs/listening_test_assets_prolific/audio/HiFi-GAN-collab-dac/121_121726_000029_000003.wav' type='audio/mpeg'></audio>
+              </tr>
+              <tr>
+                <td></td><td>MP3/Opus 16kbps</td><td><audio preload='metadata' controls><source class='select-utterance'  src='https://users.aalto.fi/~ljuvela/cowama-with-codecs/listening_test_assets_prolific/audio/HiFi-GAN-collab-16kbps//121_121726_000029_000003.wav' type='audio/mpeg'></audio>
+              </tr>
+              <tr>
+                <td></td><td>MP3/Opus 32kbps</td><td><audio preload='metadata' controls><source class='select-utterance'  src='https://users.aalto.fi/~ljuvela/cowama-with-codecs/listening_test_assets_prolific/audio/HiFi-GAN-collab-32kbps//121_121726_000029_000003.wav' type='audio/mpeg'></audio>
+              </tr>
+              <tr>
+                <td></td><td>MP3/Opus 64kbps</td><td><audio preload='metadata' controls><source class='select-utterance'  src='https://users.aalto.fi/~ljuvela/cowama-with-codecs/listening_test_assets_prolific/audio/HiFi-GAN-collab-64kbps//121_121726_000029_000003.wav' type='audio/mpeg'></audio>
+              </tr>
+              <tr>
+                <td></td><td>MP3/Opus 128kbps</td><td><audio preload='metadata' controls><source class='select-utterance'  src='https://users.aalto.fi/~ljuvela/cowama-with-codecs/listening_test_assets_prolific/audio/HiFi-GAN-collab-128kbps//121_121726_000029_000003.wav' type='audio/mpeg'></audio>
+              </tr>
+              <tr>
+                <td></td><td>MP3/Opus all</td><td><audio preload='metadata' controls><source class='select-utterance'  src='https://users.aalto.fi/~ljuvela/cowama-with-codecs/listening_test_assets_prolific/audio/HiFi-GAN-collab-all//121_121726_000029_000003.wav' type='audio/mpeg'></audio>
+              </tr>
+            </table>
+            
+        </div>
+    </div>
+
+    <hr>
+
+
+
+
+</body>
+</html>
+
+<script>
+document
+    .getElementById('select-utterance')
+    .addEventListener('change', function () {
+        'use strict';
+        var targets = document.getElementsByClassName("select-utterance")
+        for (let i = 0; i < targets.length; i++) {
+            name = targets[i].getAttribute("src")
+            name = name.substring(0, name.lastIndexOf("/"))
+            name = name + "/" + this.value + ".wav"
+            targets[i].setAttribute("src", name)
+            targets[i].parentElement.load()
+        }
+});
+</script>
